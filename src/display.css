@@ -1,0 +1,160 @@
+.FTsteamIDcont {
+	display: inline-flex;
+	font-family: sans-serif;
+	color: black;
+	font-size: 13px;
+	min-height: 15px;
+	margin: 0;
+	padding: 0;
+	line-height: 1.4em;
+}
+.FTsteamIDcont > div {
+	display: inline-block;
+	background: rgba(50, 50, 50, 0.15);
+	padding: 0 5px;
+	margin: 0;
+	line-height: 1.4em;
+}
+.FTsteamIDcont > div.sourcebans_cont {
+	background: #E59191;
+}
+.FTsteamIDcont > div.hlstats_cont {
+	background: #B4CDEB;
+}
+.FTsteamIDcont a.utility {
+	height: 100%;
+	display: inline-flex;
+	vertical-align: middle;
+	align-items: center;
+	cursor: pointer;
+}
+.FTsteamIDcont img.utilityicon {
+	max-height: 1em;
+	max-width: 1em;
+	width: auto;
+	height: auto;
+	display: block;
+}
+.FTsteamIDcont a.utility.clipboard { cursor: pointer; }
+
+.FTsteamIDcont .sid {
+	font-weight: bold;
+	color: #000;
+}
+.FTsteamIDcont .banmenucont {
+	position: absolute;
+}
+.FTsteamIDcont ul.banmenu {
+	display: none;
+	background: #f0f0f0;
+	position: relative;
+	box-shadow: 0 0 5px rgba(50, 50, 50, 0.7);
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	font-size: inherit;
+}
+.FTsteamIDcont.banmenu-open ul.banmenu {
+	display: block;
+}
+.FTsteamIDcont ul.banmenu li {
+	margin: 0;
+	padding: 3px 10px 3px 7px;
+	list-style-type: none;
+	cursor: pointer;
+	font-size: inherit;
+	line-height: 1.4;
+}
+.FTsteamIDcont ul.banmenu li .reason {
+}
+.FTsteamIDcont ul.banmenu li .time {
+	color: #666;
+}
+.FTsteamIDcont ul.banmenu li img {
+	max-height: 1em;
+	max-width: 1em;
+	width: auto;
+	height: auto;
+	margin-right: 7px;
+	margin-bottom: -2px;
+}
+.FTsteamIDcont ul.banmenu li:nth-child(odd) {
+	background: #e0e0e0;
+}
+.FTsteamIDcont ul.banmenu li:hover {
+	background: #ffe0e0;
+}
+.FTsteamIDcont ul.banmenu input[type=text] {
+	padding: 5px;
+	margin: 5px;
+	width: calc(100% - 24px);
+}
+.FTsteamIDcont ul.banmenu .boxmsg {
+	width: 300px;
+}
+.FTsteamIDcont ul.banmenu .boxmsg .title {
+	display: block;
+	font-weight: bold;
+	padding: 5px;
+	border-bottom: 1px solid #aaa;
+}
+.FTsteamIDcont ul.banmenu .boxmsg .msg {
+	padding: 5px;
+ }
+.FTsteamIDcont ul.banmenu .boxmsg.error .msg {
+	background: #ffb3ba;
+	color: #000;
+}
+.FTsteamIDcont ul.banmenu .boxmsg.ok .msg {
+	background: #baffc9;
+}
+.FTsteamIDcont ul.banmenu .boxmsg.info .msg {
+	background: #bae1ff;
+}
+.FTsteamIDcont ul.banmenu .boxmsg iframe {
+	border: 0;
+	background: #fff;
+	width: 100%;
+}
+
+/************** SERVER LIST **************/
+article div.server {
+	display: flex;
+	padding-right: 10px;
+	justify-content: space-between;
+}
+.ft-join-server-button a {
+	color: #238ad4;
+	font-weight: bold;
+	padding: 0.75em 1em;
+}
+article div.server div.name {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+article div.server div.ip {
+	min-width: 135px !important;
+	width: auto !important;
+}
+article div.server div.players {
+	text-align: center;
+	width: 55px !important;
+}
+
+/************** TOPIC HIGHLIGHTING **************/
+.topiclist .row .topictitle .ft-highlight {
+	border-radius: 3px;
+	padding: 2px 5px;
+	color: white;
+}
+.topiclist .row .topictitle .ft-highlight.posralto {
+	color: #24ff70;
+	transform: skewY(-11deg);
+	display: inline-block;
+	font-weight: bold;
+	text-decoration: underline;
+	background-image: linear-gradient(to right, #ff6ff4 , #ff0023);
+	margin-top: 12px;
+	margin-bottom: 10px;
+}
