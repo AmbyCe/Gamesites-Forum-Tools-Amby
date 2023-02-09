@@ -2,18 +2,18 @@
 Nástroje pre zjednodušenie používania portálu GameSites.cz.
 
 ---
-#### Ukázka rozšíření
+## Ukázka rozšíření
 
-Rychlé potrestání          |  Zvýrazňování názvů
+Rychlé potrestání          |  Rychlé stažení GOTV dema
 :-------------------------:|:-------------------------:
-![](https://ctrlv.cz/shots/2023/02/09/hLdr.png)  |  ![](https://ctrlv.cz/shots/2023/02/09/Rx6w.png)
+![](https://ctrlv.cz/shots/2023/02/09/hLdr.png)  |  ![](https://ctrlv.cz/shots/2023/02/09/A681.png)
 
-Počítač aktivity           |  Rychlé stažení GOTV dema
+Počítač aktivity           |  Zvýrazňování názvů topiců
 :-------------------------:|:-------------------------:
-![](https://ctrlv.cz/shots/2023/02/09/UxUb.png)  |  ![](https://ctrlv.cz/shots/2023/02/09/A681.png)
+![](https://ctrlv.cz/shots/2023/02/09/UxUb.png)  |  ![](https://ctrlv.cz/shots/2023/02/09/Rx6w.png)
 
 ---
-#### Obsah rozšíření
+## Obsah rozšíření
 - Zvýrazňování názvů topiců ve fóru.
 - Zvýrazňování SID a převádění do standartního stavu _(STEAM:1: ..)_.
 - Zjednodušení akcí _(kopírování SID, otevření Steam profilu, seznam umlčení/banů, rychlé potrestání hráče)_.
@@ -21,7 +21,7 @@ Počítač aktivity           |  Rychlé stažení GOTV dema
 - Rychlé stažení GOTV dema v HlStats _(v záložce Events)_.
 - Přehlednější Banlist.
 
-###### Výhody rozšíření
+### Výhody rozšíření
 - Intuitivní rozhraní.
 - Rychlé potrestání hráče jedním kliknutím.
 	- Přednastavené důvody banů se správnými délkami.
