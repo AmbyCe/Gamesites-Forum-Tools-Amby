@@ -82,7 +82,7 @@ const renderSIDclickable = (sid) => {
 	if (thisPage.section && thisPage.section.banOrder) {
 		ret += `<div class="banmenucont">
 					<ul class="banmenu">
-						<input type="text" placeholder="Player's nickname" name="playername" />`;
+						<input type="text" placeholder="Nickname hrace" name="playername" />`;
 
 		thisPage.section.banOrder.forEach(banEntry => {
 			let reason = banEntry.reason;
@@ -100,12 +100,16 @@ const renderSIDclickable = (sid) => {
 				iconuri = thisPage.section.banIcons.get(banEntry.type);
 			}
 			if (!iconuri) {
-				if (banEntry.type == SB_VOICE) {
-					iconuri = "icons/sourcebans_voice.png";
-				} else if (banEntry.type == SB_CHAT || banEntry.type == SB_CHAT_AND_VOICE) {
-					iconuri = "icons/sourcebans_chat.png";
-				} else if (banEntry.type == SB_GAME) {
-					iconuri = "icons/sourcebans_bans.png";
+				if (banEntry.menuIcon == "TTT") {
+					iconuri = "icons/sourcebans_bans_ttt.png";
+				} else {
+					if (banEntry.type == SB_VOICE) {
+						iconuri = "icons/sourcebans_voice.png";
+					} else if (banEntry.type == SB_CHAT || banEntry.type == SB_CHAT_AND_VOICE) {
+						iconuri = "icons/sourcebans_chat.png";
+					} else if (banEntry.type == SB_GAME) {
+						iconuri = "icons/sourcebans_bans.png";
+					}
 				}
 			}
 			if (iconuri) {

@@ -129,18 +129,42 @@ const doPlayerSessions = () => {
 	}
 	
 	const contEl = document.createElement('P');
-	contEl.style.marginBottom = '-1em';
-	contEl.innerHTML = `<b>Celková aktivita za tento měsíc:</b> ${formatSecondsToHours(activity)}`;
+	contEl.style.margin = '2em 0 -2em 3em';
+	contEl.style.fontSize = '1.5em';
+	contEl.innerHTML = `<ul><li><strong>Celková aktivita za ${getMonthName(thisMonth)}:</strong> <u>${formatSecondsToHours(activity)}</u></li></ul>`;
 	const heading = document.querySelector('.content .block .fHeading');
 	heading.insertAdjacentElement('afterend', contEl);
 }
 
+// Get name of month in Czech from month number
+function getMonthName(monthNumber) {
+	const date = new Date();
+	date.setMonth(monthNumber - 1);
+  
+	let monthName = date.toLocaleString('cz-CZ', {
+	  month: 'long',
+	});
+
+	let wordPos = -1;
+	let tempWord;
+	for (letter in monthName) {
+		wordPos++;
+		if (wordPos == 0) {
+			tempWord = monthName.charAt(wordPos).toUpperCase();
+		} else {
+			tempWord += monthName.charAt(wordPos).toLowerCase();
+		}
+	}
+	return tempWord;
+}
+
+// Format time to readable format
 const formatSecondsToHours = e => {
 	const h = Math.floor(e / 3600).toString().padStart(2,'0'),
 		  m = Math.floor(e % 3600 / 60).toString().padStart(2,'0'),
 		  s = Math.floor(e % 60).toString().padStart(2,'0');
 	
-	return h + ':' + m + ':' + s;
+	return h + 'h : ' + m + 'm : ' + s + 's';
 }
 
 // Precache server names, so we can match IPs for GOTV with names from HLstats

@@ -49,9 +49,7 @@ const sites_config = {
 						{ reason: "Opakovaný spam", time: 720, type: SB_CHAT },
 						{ reason: "Ghosting", time: 1440, type: SB_GAME },
 						{ reason: "BunnyHop script", time: 10080, type: SB_GAME },
-						{ reason: "MultiHack", time: 0, type: SB_GAME },
-						{ reason: "WallHack", time: 0, type: SB_GAME },
-						{ reason: "AimBot", time: 0, type: SB_GAME }
+						{ reason: "MultiHack", time: 0, type: SB_GAME }
 					]
 				},
 				{
@@ -126,14 +124,14 @@ const sites_config = {
 						{ reason: "Nadávky velké", time: 720, type: SB_CHAT_AND_VOICE },
 						{ reason: "Nadávky neúnosné", time: 2880, type: SB_CHAT_AND_VOICE },
 						{ reason: "Fake info", time: 30, type: SB_CHAT_AND_VOICE },
-						{ reason: "Týmování", time: 120, type: SB_GAME },
-						{ reason: "Random kill", time: 240, type: SB_GAME },
-						{ reason: "Random hity", time: 240, type: SB_GAME },
-						{ reason: "Baiting", time: 240, type: SB_GAME },
-						{ reason: "Zneužívání bloků", time: 180, type: SB_GAME },
-						{ reason: "Bugování pod mapu", time: 360, type: SB_GAME },
-						{ reason: "Ghosting in-game", time: 2880, type: SB_GAME },
-						{ reason: "Ghosting out of game", time: 10080, type: SB_GAME },
+						{ reason: "Týmování", time: 120, type: SB_GAME, menuIcon: "TTT" },
+						{ reason: "Zneužívání bloků", time: 180, type: SB_GAME, menuIcon: "TTT" },
+						{ reason: "Random kill", time: 240, type: SB_GAME, menuIcon: "TTT" },
+						{ reason: "Random hity", time: 240, type: SB_GAME, menuIcon: "TTT" },
+						{ reason: "Baiting", time: 240, type: SB_GAME, menuIcon: "TTT" },
+						{ reason: "Bugování pod mapu", time: 360, type: SB_GAME, menuIcon: "TTT" },
+						{ reason: "Ghosting in-game", time: 2880, type: SB_GAME, menuIcon: "TTT" },
+						{ reason: "Ghosting out of game", time: 10080, type: SB_GAME, menuIcon: "TTT" },
 						{ reason: "BunnyHop script", time: 10080, type: SB_GAME },
 						{ reason: "MultiHack", time: 0, type: SB_GAME }
 					]
