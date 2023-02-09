@@ -1,16 +1,15 @@
 # Gamesites.cz Forum Tools (Amby's version)
-Nástroje pre zjednodušenie používania portálu GameSites.cz.
+Nástroje pro zjednodušení práce s fórem.
 
 ---
 ## Ukázka rozšíření
-
 Rychlé potrestání          |  Rychlé stažení GOTV dema
 :-------------------------:|:-------------------------:
 ![](https://ctrlv.cz/shots/2023/02/09/hLdr.png)  |  ![](https://ctrlv.cz/shots/2023/02/09/A681.png)
 
-Počítač aktivity           |  Zvýrazňování názvů topiců
+Zvýrazňování názvů topiců  |  Počítač aktivity
 :-------------------------:|:-------------------------:
-![](https://ctrlv.cz/shots/2023/02/09/UxUb.png)  |  ![](https://ctrlv.cz/shots/2023/02/09/Rx6w.png)
+![](https://ctrlv.cz/shots/2023/02/09/Rx6w.png)  |  ![](https://ctrlv.cz/shots/2023/02/09/UxUb.png)
 
 ---
 ## Obsah rozšíření
@@ -22,12 +21,12 @@ Počítač aktivity           |  Zvýrazňování názvů topiců
 - Přehlednější Banlist.
 
 ### Výhody rozšíření
-- Intuitivní rozhraní.
-- Rychlé potrestání hráče jedním kliknutím.
+[x] Intuitivní rozhraní.
+[x] Rychlé potrestání hráče jedním kliknutím.
 	- Přednastavené důvody banů se správnými délkami.
 	- Přidání koncovky podle sekce, kde je ban udělen _(/ PP, / AA, / Aka)_.
 	- Automatické přidání odkazu na PP do Banlistu _(pouze pokud se jedná o PP; z AA se odkaz neodesílá)_.
-- Celkové zjednodušení a zpříjemnění práce s fórem.
+[x] Celkové zjednodušení a zpříjemnění práce s fórem.
 
 ---
 **Autor:** [ericek111](https://launchpad.net/~ericek111)  
