@@ -141,21 +141,26 @@ function getMonthName(monthNumber) {
 	const date = new Date();
 	date.setMonth(monthNumber - 1);
   
-	let monthName = date.toLocaleString('cz-CZ', {
+	let monthNameCz = date.toLocaleString('cz-CZ', {
 	  month: 'long',
 	});
 
-	let wordPos = -1;
-	let tempWord;
-	for (letter in monthName) {
-		wordPos++;
-		if (wordPos == 0) {
-			tempWord = monthName.charAt(wordPos).toUpperCase();
+	let monthNameSk = date.toLocaleString('sk-SK', {
+		month: 'long',
+	  });
+	return monthNameFormat(monthNameCz) + " / " + monthNameFormat(monthNameSk);
+}
+
+function monthNameFormat(monthName) {
+	let processedMonthName;
+	for (let i = 0; i < monthName.length; i++) {
+		if (i == 0) {
+			processedMonthName = monthName.charAt(i).toUpperCase();
 		} else {
-			tempWord += monthName.charAt(wordPos).toLowerCase();
+			processedMonthName += monthName.charAt(i).toLowerCase();
 		}
 	}
-	return tempWord;
+	return processedMonthName;
 }
 
 // Format time to readable format
