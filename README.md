@@ -13,7 +13,7 @@ Rychlé potrestání hráče    |  Rychlé stažení GOTV dema
 
 Zvýrazňování názvů topiců  |  Počítač aktivity
 :-------------------------:|:-------------------------:
-![](https://ctrlv.cz/shots/2023/02/09/Rx6w.png)  |  ![](https://ctrlv.cz/shots/2023/02/09/UxUb.png)
+![](https://ctrlv.cz/shots/2023/02/09/Rx6w.png)  |  ![](https://ctrlv.cz/shots/2023/02/09/etpx.png)
 
 ---
 ## Obsah rozšíření
