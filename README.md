@@ -1,4 +1,5 @@
 # Gamesites.cz Forum Tools _(Amby's version)_
+### [»» Stáhnout aktuální verzi ««](https://github.com/AmbyCe/Gamesites-Forum-Tools-Amby/releases)
 Nástroje pro zjednodušení práce s fórem.
 
 **Autor:** [ericek111](https://launchpad.net/~ericek111)  
