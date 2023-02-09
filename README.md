@@ -4,10 +4,13 @@ Nástroje pre zjednodušenie používania portálu GameSites.cz.
 ---
 #### Ukázka rozšíření
 
-![TTT Ban](https://ctrlv.cz/shots/2023/02/09/hLdr.png)
-![Topic Highlighting](https://ctrlv.cz/shots/2023/02/09/Rx6w.png)
-![HlStats Activity Counter](https://ctrlv.cz/shots/2023/02/09/UxUb.png)
-![Download GOTV Demo directly from HlStats Events](https://ctrlv.cz/shots/2023/02/09/A681.png)
+Rychlé potrestání          |  Zvýrazňování názvů
+:-------------------------:|:-------------------------:
+![](https://ctrlv.cz/shots/2023/02/09/hLdr.png)  |  ![](https://ctrlv.cz/shots/2023/02/09/Rx6w.png)
+
+Počítač aktivity           |  Rychlé stažení GOTV dema
+:-------------------------:|:-------------------------:
+![](https://ctrlv.cz/shots/2023/02/09/UxUb.png)  |  ![](https://ctrlv.cz/shots/2023/02/09/A681.png)
 
 ---
 #### Obsah rozšíření
