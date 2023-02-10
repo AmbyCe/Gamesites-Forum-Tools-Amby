@@ -18,7 +18,7 @@ const sites_config = {
 					hlstats: "http://hlstats.fakaheda.eu/hlxce_186497/hlstats.php",
 					forumSections: [
 						{ fid: 954, shortname: "PP" },
-						{ fid: 1014, shortname: "AA" },
+						{ fid: 1217, shortname: "AA" },
 						{ fid: 983, shortname: "Aka" }
 					],
 					banIcons: new Map([
@@ -113,7 +113,8 @@ const sites_config = {
 					sourcebans: "https://banlist.gamesites.cz/csgo/ttt/",
 					hlstats: "http://hlstats.fakaheda.eu/hlxce_205007/hlstats.php",
 					forumSections: [
-						{ fid: 1105, shortname: "PP" }
+						{ fid: 1105, shortname: "PP" },
+						{ fid: 1216, shortname: "AA" }
 					],
 					servers: [
 						{ ip: "217.11.249.84:27482", demos: "https://csgo.gamesites.cz/dema/index.php?server=TTT1" },
