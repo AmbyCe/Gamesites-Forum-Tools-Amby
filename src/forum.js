@@ -6,6 +6,7 @@ const getThisPage = () => {
 		forumSection: null,
 		forums: [],
 		isAdminSection: false,
+		currentForumFid: null,
 	};
 
 	if (document.body.classList.contains("section-viewtopic")) {
@@ -26,6 +27,9 @@ const getThisPage = () => {
 		forumId = parseInt(forumId, 10);
 		res.forums.push(forumId);
 	}
+
+	// Get actual fid
+	res.currentForumFid = res.forums[res.forums.length - 1];
 
 	// no forums in the navlinks
 	if (res.forums.length === 0) {
@@ -102,5 +106,9 @@ const thisPage = getThisPage();
 if (thisPage.type == "topic") {
 	doTopic();
 } else if (thisPage.type == "forum") {
-	highlightTopicTitles();
+	// Do not highlight topic titles in specific forums
+	const doHighlightForumSections = [914, 954, 976, 1105, 992];
+	if (doHighlightForumSections.includes(thisPage.currentForumFid)) {
+		highlightTopicTitles();
+	}
 }
