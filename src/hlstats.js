@@ -1,3 +1,7 @@
+let neededActivity = 0;
+let acitivyLeft = null;
+let activityColor = null;
+
 const getThisPage = () => {
 	const res = {
 		type: null,
@@ -131,7 +135,22 @@ const doPlayerSessions = () => {
 	const contEl = document.createElement('P');
 	contEl.style.margin = '2em 0 -2em 3em';
 	contEl.style.fontSize = '1.5em';
-	contEl.innerHTML = `<ul><li><strong>Celková aktivita za ${getMonthName(thisMonth)}:</strong> <u>${formatSecondsToHours(activity)}</u></li></ul>`;
+
+	// Left hours for activity process
+	if (thisPage.section.name == "JailBreak" || thisPage.section.name == "ALL" || thisPage.section.name == "Jump") {
+		neededActivity = 10;
+	} else if (thisPage.section.name == "TTT") {
+		neededActivity = 15;
+	} else {
+		neededAcitivty = 0;
+	}
+
+	if (neededActivity != 0) {
+		contEl.innerHTML = `<ul><li>Celková aktivita za ${getMonthName(thisMonth)}: <strong>${formatSecondsToHours(activity)}</strong> <ul><li><em>Zbývá pro splnění ${thisPage.section.name} aktivity: <strong style="${activityColor}">${acitivyLeft}</strong></em></li></ul> </li></ul>`;
+	} else {
+		contEl.innerHTML = `<ul><li>Celková aktivita za ${getMonthName(thisMonth)}: <strong>${formatSecondsToHours(activity)}</strong></li></ul>`;
+	}
+
 	const heading = document.querySelector('.content .block .fHeading');
 	heading.insertAdjacentElement('afterend', contEl);
 }
@@ -148,7 +167,7 @@ function getMonthName(monthNumber) {
 	let monthNameSk = date.toLocaleString('sk-SK', {
 		month: 'long',
 	  });
-	return monthNameFormat(monthNameCz) + " / " + monthNameFormat(monthNameSk);
+	return monthNameFormat(monthNameCz) + " (" + monthNameFormat(monthNameSk) + ")";
 }
 
 function monthNameFormat(monthName) {
@@ -169,6 +188,20 @@ const formatSecondsToHours = e => {
 		  m = Math.floor(e % 3600 / 60).toString().padStart(2,'0'),
 		  s = Math.floor(e % 60).toString().padStart(2,'0');
 	
+	if (neededActivity > h) {
+		let leftMinutes = (60 - m);
+		let leftSeconds = (60 - s);
+		if (leftMinutes == 60) {
+			leftMinutes = 0;
+		}
+		if (leftSeconds == 60) {
+			leftSeconds = 0;
+		}
+		acitivyLeft = (neededActivity - h) + "h : " + leftMinutes + "m : " + leftSeconds + "s";
+	} else {
+		acitivyLeft = "Aktivita splněna!";
+		activityColor = "color: #09b509";
+	}
 	return h + 'h : ' + m + 'm : ' + s + 's';
 }
 
