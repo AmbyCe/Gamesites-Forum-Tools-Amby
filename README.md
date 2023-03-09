@@ -2,7 +2,7 @@
 ### [»» Stáhnout aktuální verzi ««](https://github.com/AmbyCe/Gamesites-Forum-Tools-Amby/releases)
 Nástroje pro zjednodušení práce s fórem.
 
-**Autoři:** [ericek111](https://launchpad.net/~ericek111), [eNcoo](https://www.gamesites.cz/forum/encoo-u55968.html)
+**Autoři:** [ericek111](https://launchpad.net/~ericek111), [eNcoo](https://github.com/rothadamcz)
 
 ---
 ## Ukázka rozšíření
